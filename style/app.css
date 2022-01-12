@@ -1,0 +1,148 @@
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600&display=swap');
+
+/* All body */
+
+body,html{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: #333;
+    padding: 20px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks li{
+    list-style: none;
+    margin: 0px 30px;
+    font-weight: 400;
+}
+a{
+  text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.menuBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer p{
+    margin: 20px auto;
+}
+
+/* button style */
+
+
+.ctn{
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: #49497e;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #060441;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+/* Animations  */
+
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background-color: whitesmoke;
+    color: #060441;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+}
+a:hover{
+    color: #fc036b;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:850px){
+    .menuBtn{
+        display: block;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        text-shadow: 2px 2px 5px whitesmoke;
+        color: black;
+    }
+    .navlinks{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobileMenu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .navlinks li{
+        margin: 30px auto;
+    }
+    footer p{
+        margin: 0px;
+        padding: 0px;
+    }
+    footer {
+       height: 50px;
+       padding-top: 5px;
+    }
+}

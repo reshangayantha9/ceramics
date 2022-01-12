@@ -1,0 +1,157 @@
+
+/* header */
+
+header{
+    width: 100vw;	
+    height: 70vh;
+
+    background-image: url('../img/header.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+
+}
+
+.headerContent{
+        margin-bottom: 100px;
+        color: whitesmoke;
+        text-align: center;
+}
+
+.headerTitle{
+    font-size: 7vmin; 
+    font-weight: 600; 
+    color: black;
+    text-shadow: 2px 2px 5px whitesmoke;
+}
+
+.headerDesc{
+        font-size: 4vmin;
+        margin-top: 10px;
+        margin-bottom: 30px;
+}
+
+/* all section  */
+
+section{
+    width: 100%;
+    padding: 20px ;
+    font-size: 4vmin;
+    margin-bottom: 10px;
+    color:#49497e
+
+}
+
+/* section 1 */
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    width:50%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+ h1{
+    text-align: center;
+
+}
+p{
+    color: black;
+    font-size: 3vmin;
+}
+
+.row .col img{
+    width: 80%;
+    height: 400px;
+   object-fit: cover;
+}
+
+
+
+/* section 2 */
+
+.explore{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-image: url('../img/explo.jpg');
+    align-items: center;
+
+}
+.exploreContent{
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:50px ;
+}
+.exploreContent h1{
+    font-size: 7vmin;
+    color:#060441;
+   
+}
+.exploreContent .line{
+    margin-bottom: 10px;
+}
+.exploreContent p{
+    color:#060441;
+    margin: 10px;
+    font-weight: bold;
+}
+.exploreContent .ctn{
+    margin-top: 40px;
+}
+
+img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width:850px){
+    
+    header{
+        align-items: center;
+    }
+    section{
+        margin: 0px;
+        padding: 5px;
+    }
+    .seller{
+        width: 100%;
+    }
+
+    .seller .col img{
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .seller .row{
+        flex-direction: column;
+        
+    }
+    .seller .col{
+        margin-top:10px ;
+        width: 100%;
+    }
+    p{
+        padding: 10px;
+    }
+    .exploreConten{
+        width: 100px;
+    }
+    
+}

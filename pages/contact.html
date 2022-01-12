@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramics</title>
+    <link rel="stylesheet" href="../style/app.css">
+    <link rel="stylesheet" href="../style/contact.css">
+</head>
+
+<body>
+    <nav id="nav" class="navbar">
+        <h1 class="logo">LOGO</h1>
+        <ul class="navlinks">
+            <li><a href="../index.html ">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li> <a href="./contact.html ">Contact Us</a></li>
+        </ul>
+        <img src="../img/menu.png" alt="" class="menuBtn">
+    </nav>
+    <header>
+        <!-- header image included -->
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="address">
+                <h2>Main Branch</h2>
+                <div class="line"></div>
+                <span>No 17,<br>Main Street,<br>Colombo 1 </span>
+                <br>
+                <span>Tell : 0112452154</span>
+
+            </div>
+            <div class="lEmail">
+                <h2>Collaborations</h2>
+                <div class="line"></div>
+                <h3>Reach out to collaborate at </h3>
+                <span>ceramics@lanka.com</span>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Inquiries</h2>
+            <div class="line"></div>
+            <form>
+                <label for="">Name*</label>
+                <input type="text" placeholder="Enter your Name" required>
+                <label for="">Email*</label>
+                <input type="text" placeholder="Enter your Email" required>
+                <label for="">Subject</label>
+                <input type="text" placeholder="Subject">
+                <label for=""> Message</label>
+                <textarea name="" id="" cols="5" rows="10" placeholder="Enter your Message"></textarea>
+                <button class="ctn">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2021 All Rights Reserved</p>
+        <p>Design by :</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navlinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobileMenu')
+        })
+
+    </script>
+</body>
+
+</html>

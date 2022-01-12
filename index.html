@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramics</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/app.css">
+</head>
+
+<body>
+    <nav id="nav" class="navbar">
+        <h1 class="logo">LOGO</h1>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+            <li> <a href="./pages/contact.html ">Contact Us</a></li>
+        </ul>
+        <img src="./img/menu.png" alt="" class="menuBtn">
+    </nav>
+    <header>
+        <div class="headerContent">
+            <h1 class="headerTitle">Hand Make Ceramics</h2>
+                <div class="line"></div>
+                <h2 class="headerDesc">painted clay ceramics made with love
+                </h2>
+                <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="seller">
+        <div class="title">
+            <h1>Our Best Seller</h1>
+            <div class="line"></div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/item1.jpg" alt="">
+                <h4>Item 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/item 2.jpg">
+                <h4>Item 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href=" #" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="exploreContent">
+            <h1>Explore Ceramics Stories</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam expedita, nihil quibusdam voluptatum
+                eveniet velit exercitationem in, ipsum ipsa ducimus accusantium corporis molestias voluptas dolorem? Sit
+                ea
+                nisi voluptate quae.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2021 All Rights Reserved</p>
+        <p>Design by :</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navlinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobileMenu')
+        })
+
+    </script>
+</body>
+
+</html>

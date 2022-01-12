@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramics</title>
+    <link rel="stylesheet" href="../style/app.css">
+    <link rel="stylesheet" href="../style/about.css">
+</head>
+
+<body>
+    <nav id="nav" class="navbar">
+        <h1 class="logo">LOGO</h1>
+        <ul class="navlinks">
+            <li><a href="../index.html ">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li> <a href="./contact.html ">Contact Us</a></li>
+        </ul>
+        <img src="../img/menu.png" alt="" class="menuBtn">
+    </nav>
+    <header>
+        <h1>our brand born out of love for ceramics</h1>
+        <h2> vivid colours and passion for life</h2>
+
+    </header>
+    <h2>About Us</h2>
+    <div class="line"></div>
+    <div class="container">
+
+        <div class="left">
+            <img src="../img/about.jpg" alt="" class="img">
+        </div>
+        <div class="right">
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae et quaerat veniam
+                suscipit ducimus mollitia minima earum molestias cumque laudantium doloribus totam quod, facilis
+                impedit,
+                repellendus id quae neque.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </div>
+    <h2>Our Story</h2>
+    <div class="line"></div>
+    <div class="container">
+
+        <div class="left">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae et quaerat veniam
+                suscipit ducimus mollitia minima earum molestias cumque laudantium doloribus totam quod, facilis
+                impedit,
+                repellendus id quae neque.</p>
+            <a href="#" class="ctn">Learn More</a>
+
+        </div>
+        <div class="right">
+            <img src="../img/story.jpg" alt="" class="img">
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© 2021 All Rights Reserved</p>
+        <p>Design by :</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.navlinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobileMenu')
+        })
+
+    </script>
+</body>
+
+</html>
